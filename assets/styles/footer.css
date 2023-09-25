@@ -1,0 +1,21 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 3rem 9%;
+	background: var(--second-bg-color);
+}
+
+.footer-text > p {
+	font-size: 1.6rem;
+}
+
+.footer-iconTop {
+	position: relative;
+}
+
+.footer-iconTop .home-social-media {
+	bottom: -2rem;
+	right: -1rem;
+}
