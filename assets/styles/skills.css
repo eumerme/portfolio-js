@@ -1,0 +1,46 @@
+.about .container.skills-content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	gap: 2rem;
+}
+
+.about .container.skills-content .tech {
+	width: 100%;
+	height: max-content;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	padding: 3rem 0;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+}
+
+.about .container.skills-content .tech > img {
+	width: 90%;
+	max-width: 70px;
+	aspect-ratio: 1/1;
+	border-radius: 10px;
+}
+
+.about .container.skills-content .tech > img:hover {
+	transform: scale(1.4);
+}
+
+.about .container.skills-content .title {
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: end;
+	line-height: 4rem;
+}
+
+.about .container.skills-content .title > h2 {
+	font-size: 2.5rem;
+	list-style: none;
+	color: var(--main-color);
+}
