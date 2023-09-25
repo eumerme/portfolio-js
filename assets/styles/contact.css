@@ -1,0 +1,96 @@
+.contact .container.contact-content {
+	width: 100%;
+	padding-top: 3rem;
+	grid-template-columns: 30% 58%;
+	gap: 12%;
+	font-size: 16px;
+	color: var(--text-color);
+	position: relative;
+}
+
+.contact .container.contact-content .mailto {
+	width: 100%;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	text-align: center;
+	background: var(--second-bg-color);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	padding: 1.9rem;
+	border-radius: 1.2rem;
+}
+
+.contact .container.contact-content .mailto > a {
+	display: inline-block;
+	padding-top: 0.7rem;
+	color: var(--text-color);
+	transition: 0.8s ease-in-out;
+}
+
+.contact .container.contact-content .mailto > a:hover {
+	color: var(--main-color);
+	transform: scale(1.1);
+}
+
+.contact .container.contact-content .mailto > i {
+	color: var(--main-color);
+	font-size: 4rem;
+	margin-bottom: 0.6rem;
+}
+
+.contact form {
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact .form-field {
+	position: relative;
+}
+
+.contact label {
+	font-size: 1.3rem;
+	position: absolute;
+	top: -1.5rem;
+	left: 1.25rem;
+	padding: 0.5rem 1rem;
+	background: var(--bg-color);
+	border-radius: 10px;
+}
+
+.contact form .form-field input,
+.contact form .form-field textarea {
+	width: 100%;
+	height: 100%;
+	padding: 1.4rem;
+	border-radius: 0.6rem;
+	background: transparent;
+	border: 0.2px solid var(--main-color);
+	resize: none;
+	color: var(--text-color);
+	outline: none;
+	font-size: 16px;
+}
+
+.contact form .focus {
+	width: 0;
+	height: 100%;
+	background: var(--second-bg-color);
+	border-radius: 0.6rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.contact form .form-field input:focus ~ .focus,
+.contact form .form-field input:valid ~ .focus,
+.contact form .form-field textarea:focus ~ .focus,
+.contact form .form-field textarea:valid ~ .focus {
+	width: 100%;
+}
