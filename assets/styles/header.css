@@ -56,3 +56,77 @@
 	font-size: 3.6rem;
 	cursor: pointer;
 }
+
+.modal {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	.menu-icon {
+		display: block;
+	}
+
+	.navbar {
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		left: -100%;
+		flex-direction: column;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+		background: #0d0d0dc7;
+		border-radius: 15px;
+		text-align: center;
+		transition: 0.8s all ease;
+		z-index: 3;
+	}
+
+	.navbar.active {
+		left: 0;
+	}
+
+	.navbar div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.navbar div i {
+		display: block;
+	}
+
+	.navbar div a {
+		display: block;
+		font-size: 1.7rem;
+		margin: 3rem;
+	}
+
+	.navbar div a.active {
+		color: var(--main-color);
+		border-bottom: none;
+	}
+
+	.header.sticky.active {
+		background: transparent;
+	}
+
+	.modal.active {
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		display: block;
+		background: #112e42b7;
+		z-index: 1;
+		animation-name: slidein;
+		animation-duration: 0.8s;
+	}
+
+	@keyframes slidein {
+		from {
+			left: -100%;
+		}
+		to {
+			left: 0;
+		}
+	}
+}
