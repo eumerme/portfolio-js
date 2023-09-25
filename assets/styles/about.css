@@ -42,3 +42,20 @@
 .about-img > img:hover {
 	transform: rotate(0deg);
 }
+
+@media screen and (max-width: 1024px) {
+	.about .about-content {
+		grid-template-columns: 1fr;
+		gap: 0;
+		text-align: center;
+	}
+
+	.about-wrapper {
+		margin-bottom: 3.5rem;
+	}
+
+	.about-img {
+		width: 60%;
+		margin: 2rem 0;
+	}
+}

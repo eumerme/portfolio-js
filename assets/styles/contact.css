@@ -94,3 +94,15 @@
 .contact form .form-field textarea:valid ~ .focus {
 	width: 100%;
 }
+
+@media screen and (max-width: 1024px) {
+	.contact .container.contact-content {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+
+	.contact .container.contact-content .home-social-media {
+		bottom: -7rem;
+		left: calc(100%-50px);
+	}
+}

@@ -44,3 +44,35 @@
 	list-style: none;
 	color: var(--main-color);
 }
+
+@media screen and (max-width: 1024px) {
+	.about .container.skills-content .tech > img {
+		max-width: 60px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.about .container.skills-content {
+		grid-template-columns: 1fr;
+	}
+
+	.about .container.skills-content .tech {
+		gap: 2rem;
+	}
+
+	.about .container.skills-content .tech > img {
+		min-width: 20px;
+	}
+
+	.about .container.skills-content .title {
+		flex-direction: row;
+		gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 290px) {
+	.about .container.skills-content .title {
+		flex-direction: column;
+		line-height: 1rem;
+	}
+}
