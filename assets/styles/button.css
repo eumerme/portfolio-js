@@ -1,0 +1,50 @@
+.bx-btn {
+	width: max-content;
+	height: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.bx-btn .btn {
+	position: relative;
+	align-items: center;
+	background: var(--main-color);
+	border: 0.2rem solid var(--main-color);
+	border-radius: 0.8rem;
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.1rem;
+	color: var(--bg-color);
+	z-index: 1;
+	overflow: hidden;
+	cursor: pointer;
+	padding: 1.3rem 1.8rem;
+}
+
+.bx-btn .btn:hover {
+	color: var(--main-color);
+}
+
+.bx-btn .btn::before {
+	width: 0;
+	height: 100%;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--bg-color);
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.bx-btn .btn:hover::before {
+	width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	.bx-btn .btn {
+		font-size: 1.5rem;
+		padding: 1rem 1.5rem;
+	}
+}
