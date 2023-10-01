@@ -59,6 +59,8 @@
 
 .modal {
 	display: none;
+	transition: 0.8s all ease;
+	transform: translateY(-150%);
 }
 
 @media screen and (max-width: 768px) {
@@ -70,25 +72,23 @@
 		width: 100%;
 		position: absolute;
 		top: 100%;
-		left: -100%;
+		left: 0;
 		flex-direction: column;
-		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+		box-shadow: var(--shadow);
 		background: #0d0d0dc7;
 		border-radius: 15px;
 		text-align: center;
 		transition: 0.8s all ease;
+		transform: translateY(-150%);
 		z-index: 3;
 	}
 
 	.navbar.active {
-		left: 0;
+		transform: translateY(0);
 	}
 
 	.navbar div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
+		width: 100%;
 	}
 
 	.navbar div i {
@@ -96,9 +96,15 @@
 	}
 
 	.navbar div a {
-		display: block;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 3rem;
+		padding: 0;
 		font-size: 1.7rem;
-		margin: 3rem;
+		margin: 3rem 0;
 	}
 
 	.navbar div a.active {
@@ -117,16 +123,6 @@
 		display: block;
 		background: #112e42b7;
 		z-index: 1;
-		animation-name: slidein;
-		animation-duration: 0.8s;
-	}
-
-	@keyframes slidein {
-		from {
-			left: -100%;
-		}
-		to {
-			left: 0;
-		}
+		transform: translateY(0);
 	}
 }
