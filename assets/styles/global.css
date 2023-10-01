@@ -5,6 +5,8 @@
 	--second-bg-color: #112e42;
 	--text-color: #ededed;
 	--main-color: #00abf0;
+	--shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	--transition-ease: 0.5s ease;
 }
 
 * {

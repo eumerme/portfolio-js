@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="./assets/styles/header.css" />
 		<link rel="stylesheet" href="./assets/styles/home.css" />
 		<link rel="stylesheet" href="./assets/styles/about.css" />
+		<link rel="stylesheet" href="./assets/styles/portfolio.css" />
 		<link rel="stylesheet" href="./assets/styles/qualification.css" />
 		<link rel="stylesheet" href="./assets/styles/skills.css" />
 		<link rel="stylesheet" href="./assets/styles/contact.css" />
@@ -24,24 +25,40 @@
 
 			<nav class="navbar">
 				<div>
-					<i class="bx bxs-home"></i>
-					<a href="#home" class="active">Home</a>
+					<a href="#home" class="active">
+						<i class="bx bxs-home"></i>
+						Home
+					</a>
 				</div>
 				<div>
-					<i class="bx bxs-user"></i>
-					<a href="#about">Sobre</a>
+					<a href="#about">
+						<i class="bx bxs-user"></i>
+						Sobre
+					</a>
 				</div>
 				<div>
-					<i class="bx bxs-book"></i>
-					<a href="#qualification">Qualificações</a>
+					<a href="#portfolio">
+						<i class="bx bxs-briefcase-alt-2"></i>
+						Portfólio
+					</a>
 				</div>
 				<div>
-					<i class="bx bxs-bar-chart-alt-2"></i>
-					<a href="#skills">Habilidades</a>
+					<a href="#qualification">
+						<i class="bx bxs-bookmark-star"></i>
+						Qualificações
+					</a>
 				</div>
 				<div>
-					<i class="bx bxs-chat"></i>
-					<a href="#contact">Contato</a>
+					<a href="#skills">
+						<i class="bx bxs-bar-chart-alt-2"></i>
+						Habilidades
+					</a>
+				</div>
+				<div>
+					<a href="#contact">
+						<i class="bx bxs-chat"></i>
+						Contato
+					</a>
 				</div>
 			</nav>
 
@@ -55,7 +72,7 @@
 		<!-- home -->
 		<section class="home" id="home">
 			<video id="bg-video" autoplay loop muted>
-				<source src="./assets/files/bg.mp4" type="video/mp4" />
+				<source src="./assets/files/videos/bg.mp4" type="video/mp4" />
 			</video>
 
 			<div class="home-content">
@@ -91,7 +108,7 @@
 				<div class="about-content">
 					<div class="about-wrapper">
 						<div class="about-img">
-							<img src="./assets/files/profile.jpeg" alt="profile pic" />
+							<img src="./assets/files/images/profile.jpeg" alt="profile pic" />
 						</div>
 						<div class="bx-btn">
 							<a href="./assets/files/cv.pdf" class="btn" download>Download CV</a>
@@ -114,6 +131,71 @@
 						Se você quiser saber mais sobre o meu trabalho ou trocar uma ideia, fique à vontade para entrar em contato
 						comigo e/ou baixar meu currículo!
 					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- portfolio -->
+		<section class="portfolio" id="portfolio">
+			<div class="section-header">
+				<h5>Trabalhos recentes</h5>
+				<h1>Portfólio</h1>
+			</div>
+
+			<div class="container portfolio-content">
+				<div class="bx-portfolio">
+					<img src="./assets/files/images/github.svg" alt="" />
+					<div class="layer-portfolio">
+						<h4>web degine</h4>
+						<p>lorem ipn</p>
+						<a href="">
+							<i class="bx bx-link-external"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="bx-portfolio">
+					<img src="./assets/files/images/github.svg" alt="" />
+					<div class="layer-portfolio">
+						<h4>web degine</h4>
+						<p>lorem ipn</p>
+						<a href="">
+							<i class="bx bx-link-external"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="bx-portfolio">
+					<img src="./assets/files/images/github.svg" alt="" />
+					<div class="layer-portfolio">
+						<h4>web degine</h4>
+						<p>lorem ipn</p>
+						<a href="">
+							<i class="bx bx-link-external"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="bx-portfolio">
+					<img src="./assets/files/images/github.svg" alt="" />
+					<div class="layer-portfolio">
+						<h4>web degine</h4>
+						<p>lorem ipn</p>
+						<a href="">
+							<i class="bx bx-link-external"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="bx-portfolio">
+					<img src="./assets/files/images/github.svg" alt="" />
+					<div class="layer-portfolio">
+						<h4>web degine</h4>
+						<p>lorem ipn</p>
+						<a href="">
+							<i class="bx bx-link-external"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -191,7 +273,7 @@
 		</section>
 
 		<!-- skills -->
-		<section class="about" id="skills">
+		<section class="skills" id="skills">
 			<div class="section-header">
 				<h5>Meu nível técnico</h5>
 				<h1>Linguagens & Tecnologias</h1>
@@ -277,10 +359,6 @@
 					<h2>Básico</h2>
 					e
 					<h2>Médio</h2>
-					<!-- <ul>
-						<li>Básico</li>
-						<li>Médio</li>
-					</ul> -->
 				</div>
 			</div>
 		</section>
