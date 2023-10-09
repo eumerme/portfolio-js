@@ -1,11 +1,15 @@
-.about .container.skills-content {
+.skills {
+	background: var(--second-bg-color);
+}
+
+.skills .container.skills-content {
 	width: 100%;
 	display: grid;
 	grid-template-columns: 5fr 1fr;
 	gap: 2rem;
 }
 
-.about .container.skills-content .tech {
+.skills .container.skills-content .tech {
 	width: 100%;
 	height: max-content;
 	display: flex;
@@ -14,22 +18,23 @@
 	align-items: center;
 	gap: 3rem;
 	padding: 3rem 0;
-	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+	box-shadow: var(--shadow);
 	border-radius: 15px;
 }
 
-.about .container.skills-content .tech > img {
+.skills .container.skills-content .tech > img {
 	width: 90%;
 	max-width: 70px;
 	aspect-ratio: 1/1;
 	border-radius: 10px;
+	transition: var(--transition-ease);
 }
 
-.about .container.skills-content .tech > img:hover {
+.skills .container.skills-content .tech > img:hover {
 	transform: scale(1.4);
 }
 
-.about .container.skills-content .title {
+.skills .container.skills-content .title {
 	height: max-content;
 	display: flex;
 	flex-direction: column;
@@ -39,39 +44,39 @@
 	line-height: 4rem;
 }
 
-.about .container.skills-content .title > h2 {
+.skills .container.skills-content .title > h2 {
 	font-size: 2.5rem;
 	list-style: none;
 	color: var(--main-color);
 }
 
 @media screen and (max-width: 1024px) {
-	.about .container.skills-content .tech > img {
+	.skills .container.skills-content .tech > img {
 		max-width: 60px;
 	}
 }
 
 @media screen and (max-width: 800px) {
-	.about .container.skills-content {
+	.skills .container.skills-content {
 		grid-template-columns: 1fr;
 	}
 
-	.about .container.skills-content .tech {
+	.skills .container.skills-content .tech {
 		gap: 2rem;
 	}
 
-	.about .container.skills-content .tech > img {
+	.skills .container.skills-content .tech > img {
 		min-width: 20px;
 	}
 
-	.about .container.skills-content .title {
+	.skills .container.skills-content .title {
 		flex-direction: row;
 		gap: 2rem;
 	}
 }
 
 @media screen and (max-width: 290px) {
-	.about .container.skills-content .title {
+	.skills .container.skills-content .title {
 		flex-direction: column;
 		line-height: 1rem;
 	}
