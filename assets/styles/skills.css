@@ -1,9 +1,12 @@
 .skills {
 	background: var(--second-bg-color);
+	display: grid;
+	align-self: center;
 }
 
 .skills .container.skills-content {
 	width: 100%;
+	height: max-content;
 	display: grid;
 	grid-template-columns: 5fr 1fr;
 	gap: 2rem;
@@ -17,9 +20,9 @@
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
-	padding: 3rem 0;
 	box-shadow: var(--shadow);
 	border-radius: 15px;
+	padding: 1rem;
 }
 
 .skills .container.skills-content .tech > img {
@@ -72,6 +75,7 @@
 	.skills .container.skills-content .title {
 		flex-direction: row;
 		gap: 2rem;
+		padding-top: 2rem;
 	}
 }
 
