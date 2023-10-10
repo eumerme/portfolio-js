@@ -2,17 +2,23 @@
 	width: 100%;
 	height: auto;
 	background: var(--second-bg-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
-.container.portfolio-content {
+.container .portfolio-content {
 	width: 100%;
+	height: max-content;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	align-items: center;
-	gap: 2.5rem;
+	gap: 5rem;
+	padding: 5rem 0;
 }
 
 .bx-portfolio {
+	width: 100%;
 	position: relative;
 	border-radius: 2rem;
 	box-shadow: var(shadow);
@@ -25,6 +31,7 @@
 	aspect-ratio: 1/1;
 	border-radius: 1.5rem;
 	transition: var(--transition-ease);
+	object-fit: cover;
 }
 
 .bx-portfolio:hover > img {
@@ -37,7 +44,7 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+	background: linear-gradient(rgba(0, 0, 0, 0.3), var(--main-color));
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -52,11 +59,7 @@
 
 .layer-portfolio > h4 {
 	font-size: 3rem;
-}
-
-.layer-portfolio > p {
-	font-size: 1.6rem;
-	margin: 0.3rem 0 1rem;
+	margin-bottom: 2rem;
 }
 
 .layer-portfolio > a {
@@ -75,15 +78,23 @@
 }
 
 @media screen and (max-width: 1024px) {
-	.container.portfolio-content {
+	.container .portfolio-content {
 		grid-template-columns: 1fr 1fr;
-		gap: 1.2rem;
+		padding: 5rem 9rem;
+	}
+}
+
+@media screen and (max-width: 884px) {
+	.container .portfolio-content {
+		grid-template-columns: 1fr 1fr;
+		padding: 3rem 0;
 	}
 }
 
 @media screen and (max-width: 680px) {
-	.container.portfolio-content {
+	.container .portfolio-content {
+		width: 100%;
 		grid-template-columns: 1fr;
-		gap: 1rem;
+		padding: 3rem 2rem;
 	}
 }

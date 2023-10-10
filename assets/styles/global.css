@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
 
 :root {
-	--bg-color: #081b29;
-	--second-bg-color: #112e42;
+	--bg-color: #232634;
+	--second-bg-color: #414559;
 	--text-color: #ededed;
-	--main-color: #00abf0;
+	--main-color: #e78284;
 	--shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 	--transition-ease: 0.5s ease;
 }
@@ -64,6 +64,8 @@ section {
 	flex-grow: 1;
 	display: grid;
 	align-items: center;
+	margin: 0 auto;
+	max-width: 1500px;
 }
 
 @media screen and (max-width: 1200px) {
